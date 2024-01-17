@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+  <nav id="head-nav">
+    <img src=".\assets\education.png" class="logo animate__animated animate__bounce" />
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <img src="./assets/education.png" class="logo animate__animated animate__bounce" />
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="sec_pic_container">
+      <img src="./assets/picsask.jpg" alt="Akshay's pic" />
+    </div>
+    <div class="sec_text">
+      <p class="sec_text_p1">Hello, I'm</p>
+      <h1 class="title ">Akshay kumar singh</h1>
+      <span id="element"></span>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <!-- <div id="socials-container">
+        <img src="assets/linkedin.png" class="icon"
+          onclick="location.href='https:https://www.linkedin.com/in/akshay-kumar-singh-9113311288/'">
+        <img src="assets/github.png" class="icon" onclick="location.href='https:https://github.com/9113311288'">
+      </div> -->
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="sec_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="sec_pic_container">
+        <!-- <img src="./assets/aks.jpg" alt="about pic" class="about-pic" /> -->
+        <img src="./assets/my.jpg" alt="about pic" class="about-pic" />
+      </div>
+      <div class="about_detail_container">
+        <div class="about_container">
+          <div class="detail_container">
+            <img src="assets/experience.png" alt="experience" class="icon" />
+            <h3>Experience</h3>
+            <p>currently intern at Samsung<br> experienced in java and python<br>
+            frontend developer  </p>
+          </div>
+          <div class="detail_container">
+            <img src="assets/education.png" alt="education" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelor's in Engineering <br> Computer Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            "Hello! I'm Akshay kumar singh, a passionate web frontend developer, java enthusiast, and a basketball player.
+            My journey in the world of technology and art began with a curiosity to create, 
+            and it's a journey
+            I'm excited to continue.
+            With a strong foundation in web technologies like HTML, CSS, and JavaScript, I 
+            strive to craft engaging and
+            user-friendly interfaces. I'm also well-versed in python, allowing me to tackle complex programming challenges
+            and develop efficient applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#skill'" />
+  </section>
+
+  <section id="skill">
+    <p class="sec_text_p1">Explore My</p>
+    <h1 class="title">Skill</h1>
+    <div class="skill_detail_container">
+      <div class="about_container">
+        <div class="detail_container">
+          <h2 class="skill_sub_title">Programming Language</h2>
+          <div class="article_container">
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>intermediate</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="detail_container">
+          <h2 class="skill_sub_title">Tools & Database</h2>
+          <div class="article_container">
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>React.js</h3>
+                <p>Begineer</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Tailwind css</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/arrow.png" alt="arrow png" class="icon sk_arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="sec_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="skill_detail_container">
+      <div class="about_container">
+        <div class="detail_container color-container">
+          <div class="article_container ">
+            <img src="./assets/img.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="skill_sub_title project-title">CHARCTER COUNTER Tool</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https:https://github.com/9113311288/character_counter'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="detail_container color-container">
+          <div class="article_container">
+            <img src="./assets/img.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="skill_sub_title project-title">GOOGLE KEEP APP CLONE</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https:https://github.com/9113311288/Google-Keep_app'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="detail_container color-container">
+          <div class="article_container">
+            <img src="./assets/img.jpg" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="skill_sub_title project-title">animated and digital clock</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https:https://github.com/9113311288/Clocks'">
+              Github
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <div id="fill_color">
+    <section id="contact">
+      <p class="sec_text_p1 ch_text">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:akshaysinghdbg9113@gmail.com">akshaysinghdbg9113@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/akshay-kumar-singh-873181271/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
